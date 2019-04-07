@@ -8,8 +8,13 @@ class Product {
 }
 
 class singleProduct {
-    constructor(product, elemclass) {
+    constructor(product) {
         this.product = product;
+    }
+
+    addToCart() {
+        console.log("Adding to cart");
+        console.log(this.product);
     }
     render() {
         const prodElement = document.createElement("li");
@@ -25,6 +30,8 @@ class singleProduct {
           </div>
         </div>
       `;
+        const addToCartBtn = prodElement.querySelector("button");
+        addToCartBtn.addEventListener("click", this.addToCart.bind(this));
         return prodElement;
     }
 }
