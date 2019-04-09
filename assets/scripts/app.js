@@ -29,14 +29,23 @@ class ShoppingCart {
         updatedItems.push(product);
         this.cartItems = updatedItems;
     }
+
+    orderCartProducts = () => {
+        console.log("...Ordering Now");
+        console.log(this.items);
+    };
     render() {
         console.log("Aprod", this.items);
         const cartElement = document.createElement("section");
         cartElement.innerHTML = `
             <h2>Total: \$${0}</h2>
-            <button>Order Now!</button>
+            <button>Check Out!</button>
         `;
+
         cartElement.className = "cart";
+
+        const orderCart = cartElement.querySelector("button");
+        orderCart.addEventListener("click", this.orderCartProducts);
         this.totalOutput = cartElement.querySelector("h2"); // Another property of this class
         return cartElement;
     }
