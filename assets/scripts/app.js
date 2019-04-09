@@ -87,13 +87,13 @@ class ProductList {
     products = [
         new Product(
             "A Laptop",
-            "file:///C:/Users/ONIGA/Downloads/Product%20images/hpenv.jpg",
+            "https://www.google.com/url?q=https://www.freepnglogos.com/pics/laptop&sa=U&ved=2ahUKEwj85Ojjrz5AhXVgM4BHeWRB7MQr4kDegQIYhAB&usg=AOvVaw06SAac91mUw7WmS0svncAk",
             "Hp laptop 16 gig ram",
             19.99
         ),
         new Product(
             "An Earbud",
-            "file:///C:/Users/ONIGA/Downloads/Product%20images/earbud.jpg",
+            "https://www.google.com/search?biw=360&bih=511&tbm=isch&sxsrf=ALiCzsaUR9gHMcBqBGH53ZjsUlVIlpqQYw%3A1660158077456&sa=1&q=product+airpod+image+png&oq=product+airpod+image+png&aqs=mobile-gws-lite..#",
             "Listen to the Amazing sound of life.",
             89.99
         )
